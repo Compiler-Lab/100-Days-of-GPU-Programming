@@ -14,3 +14,10 @@ Implemented `nn.Linear` inference in PyTorch and Triton.
 - Fused Triton kernel (matmul + bias): 0.26ms on A100
 
 Resources: [Triton Tutorials](https://triton-lang.org/main/getting-started/tutorials/index.html)
+
+---
+
+**Day 2 : Sigmoid Linear Unit (SiLU)**
+
+Implemented SiLU (`x * sigmoid(x)`) in CUDA.
+- Profiling with Nsight Compute (`ncu`) to identify the kernel bottleneck and measure memory bandwidth utilization — WIP.
